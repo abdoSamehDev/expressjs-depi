@@ -28,3 +28,8 @@ app.post("/", (req, res) => {
 app.put("/:id", (req, res) => {
   res.status(201).json({ id: req.params.id });
 });
+
+//put req
+app.delete("/:id", (req, res) => {
+  res.status(200).json({ id: req.params.id });
+});
