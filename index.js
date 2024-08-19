@@ -23,3 +23,8 @@ app.post("/", (req, res) => {
 
   res.status(201).json(req.body);
 });
+
+//put req
+app.put("/:id", (req, res) => {
+  res.status(201).json({ id: req.params.id });
+});
