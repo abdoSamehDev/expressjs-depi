@@ -29,7 +29,7 @@ app.put("/:id", (req, res) => {
   res.status(201).json({ id: req.params.id });
 });
 
-//put req
+//del req
 app.delete("/:id", (req, res) => {
   res.status(200).json({ id: req.params.id });
 });
